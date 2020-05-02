@@ -12,7 +12,7 @@ const clearMessages = () => {
 
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const url = "http://localhost:3000/weather?address=" + search.value;
+    const url = "/weather?address=" + search.value;
     clearMessages();
     fetch(url).then((res) => {
         res.json().then((data) => {
