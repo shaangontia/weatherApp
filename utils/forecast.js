@@ -10,7 +10,13 @@ const forcast = (lat, long, callback) => {
                 callback(body.error.info);
             } else {
                 const current = body.current;
-                callback(undefined, current.weather_descriptions[0] + ', It is currently ' + current.temperature + ' degrees outside and it feels like ' + current.feelslike);
+                console.log(body.current);
+                let weatherContent = current.weather_descriptions[0] + ', It is currently ' + current.temperature + ' degrees outside and it feels like ' + current.feelslike;
+                let weatherIcon = body.current.weather_icons[0];
+                callback(undefined, {
+                    weatherContent,
+                    weatherIcon
+                });
             }
         }
 

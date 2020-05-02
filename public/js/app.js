@@ -4,10 +4,12 @@ const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const forecastMessage = document.querySelector("#forecast");
 const locationName = document.querySelector("#location");
+const imageIcon = document.querySelector("#weatherIcon");
 
 const clearMessages = () => {
     forecastMessage.textContent = "";
     locationName.textContent = "Loading....";
+    imageIcon.src = "";
 };
 
 weatherForm.addEventListener('submit', (event) => {
@@ -21,6 +23,8 @@ weatherForm.addEventListener('submit', (event) => {
             } else {
                 locationName.textContent = data.location;
                 forecastMessage.textContent = data.forecastData;
+                imageIcon.src = data.weatherIcon;
+
             }
             
         })

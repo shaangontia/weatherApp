@@ -54,3 +54,14 @@ header a {
 .main-content {
     flex-grow: 1;
 }
+
+.forecast {
+    display: flex;
+    padding-top: 50px;
+}
+
+.forecast .content {
+    display: block;
+    padding-left: 30px;
+    padding-top: 30px;
+}

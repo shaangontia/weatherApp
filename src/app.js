@@ -74,10 +74,10 @@ app.get('/weather', (req, res) => {
             } else {
                 weatherObject = {
                     location,
-                    forecastData: data,
+                    forecastData: data.weatherContent,
+                    weatherIcon: data.weatherIcon,
                     address
                 };
-                // console.log(data); 
                 res.send(weatherObject);
             }
         });

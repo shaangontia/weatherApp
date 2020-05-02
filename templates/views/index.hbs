@@ -8,15 +8,22 @@
     <body>
         <div class="main-content">
             {{>header}}
-        <p>Use this site to get the weather information</p>
+            <p>Use this site to get the weather information</p>
 
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
-        </form>
-        <p id="location"></p>
-        <p id="forecast"</p>
-
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+            
+            
+            
+            <div class="forecast">
+                <div><img id="weatherIcon" style="width: 100px;"></div>
+                <div class="content">
+                    <div id="location"></div>
+                    <div><span id="forecast"></span></div>
+                </div>
+            </div>
         </div>
 
 
