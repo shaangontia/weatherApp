@@ -25,16 +25,8 @@ app.use(express.static(PUBLIC_DIR));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'shaan' 
+        name: 'Shaan' 
     }); 
-});
-
-app.get('/help', (req, res) => {
-    res.render('help', {
-        title: 'Help',
-        name: 'Shaan',
-        help: 'If you need help then I am there'
-    });
 });
 
 app.get('/about', (req, res) => {

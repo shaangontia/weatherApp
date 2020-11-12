@@ -22,6 +22,7 @@ button {
     background: #888888;
     color: 8px;
     padding: 8px;
+    width: 100px;
 
 }
 footer {
@@ -64,4 +65,8 @@ header a {
     display: block;
     padding-left: 30px;
     padding-top: 30px;
+}
+
+.location {
+    width: 400px;
 }
